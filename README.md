@@ -34,9 +34,8 @@ This repository provides data for `80,015` ACL articles -
 ```
 
 The  provided ACL id is consistent with S2 API as well - 
-```
-[https://api.semanticscholar.org/graph/v1/paper/ACL:P83-1025]([https://api.semanticscholar.org/graph/v1/paper/ACL:P83-1025])
-```
+
+[https://api.semanticscholar.org/graph/v1/paper/ACL:P83-1025](https://api.semanticscholar.org/graph/v1/paper/ACL:P83-1025)
 
 
 
