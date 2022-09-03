@@ -10,7 +10,7 @@ Runs with latest version of scrapy - `pip install scrapy`
 For example here we demonstrate ACL crawling
 
 
-1. ist441_bot/spiders/follow_spider.py
+1. acl_crawl/spiders/follow_spider.py
 
 Edit the domain and start url if needed.
 
@@ -29,5 +29,5 @@ mv links_bib.txt links_pdf.txt
 parallel -j16 -k curl -O < links_pdf.txt
 ```
 
-This will download all the 
+This will download all the pdfs from ACL.
 
