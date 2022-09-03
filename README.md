@@ -2,7 +2,7 @@
 This repository provides full-text and metadata to the ACL anthology collection including .pdf files and grobid extractions of the pdfs.
 
 ## How is this different from what ACL anthology provides? 
-We are also providing full-text, references and other details extracted by grobid from the PDFs. If you just want abstracts please visit - [acl anthology](https://aclanthology.org/anthology+abstracts.bib.gz) 
+We are also providing full-text, references and other details extracted by grobid from the PDFs. If you just want abstracts, please visit - [acl anthology](https://aclanthology.org/anthology+abstracts.bib.gz) 
 
 
 ----
@@ -34,8 +34,9 @@ This repository provides data for `80,015` ACL articles -
 ```
 
 The  provided ACL id is consistent with S2 API as well - 
-
+```
 [https://api.semanticscholar.org/graph/v1/paper/ACL:P83-1025]([https://api.semanticscholar.org/graph/v1/paper/ACL:P83-1025])
+```
 
 
 
