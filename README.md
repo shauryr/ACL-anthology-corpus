@@ -12,8 +12,8 @@ The goal is to keep this repo updated and provide a comprehensive repository of 
 This repository provides data for `80,015` ACL articles - 
 1. 📖 All PDFs in ACL anthology : **size 45G**  [download here](https://drive.google.com/file/d/1OGHyJrkaVpbrdbmxsDotG-tI3LiKyxuC/view?usp=sharing)
 2. All bib files in ACL anthology with abstracts : **size 172M** [download here](https://drive.google.com/file/d/1dJ-iE85moBv3iYG2LhRLT6KQyVkmllBg/view?usp=sharing)
-2. 🏷️ Raw grobid extraction results on all the ACL anthology pdfs which includes full text and references [TODO]
-3. 💾 CSV file with metadata and full text of the collection for analysis 
+2. 🏷️ Raw grobid extraction results on all the ACL anthology pdfs which includes full text and references : 
+3. 💾 CSV file with metadata and full text of the collection for analysis : [download here](https://drive.google.com/file/d/1tmczx10fRgOXBN6gweN3f8qscz9pXNnN/view?usp=sharing)
 
 ```python
 >>> import pandas as pd
