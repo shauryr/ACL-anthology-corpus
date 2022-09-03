@@ -7,7 +7,7 @@ We are also providing full-text, references and other details extracted by grobi
 
 ----
 
-The goal is to keep this repo updated and a comprehensive repository of the full ACL collection.
+The goal is to keep this repo updated and provide a comprehensive repository of the full ACL collection.
 
 This repository provides - 
 1. 📖 All PDFs in ACL anthology -  `80,015`
