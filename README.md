@@ -15,7 +15,7 @@ This repository provides data for `80,015` ACL articles -
 2. 🏷️ Raw grobid extraction results on all the ACL anthology pdfs which includes full text and references [TODO]
 3. 💾 CSV file with metadata and full text of the collection for analysis 
 
-```
+```python
 >>> import pandas as pd
 >>> pd.read_parquet('acl_corpus_full-text.parquet')
 
