@@ -91,7 +91,7 @@ def get_dataframe(path_to_extraction_folder, k=None):
         axis=1,
     )
 
-    df["ACL_id"] = df.progress_apply(
+    df["acl_id"] = df.progress_apply(
         lambda row: row["tei"].basename(),
         axis=1,
     )
