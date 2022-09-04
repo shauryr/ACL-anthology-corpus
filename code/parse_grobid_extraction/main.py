@@ -56,13 +56,13 @@ class TEIFile(object):
 
     @property
     def title(self):
-        if not self._title:
+        if not self._title and self.soup.title:
             self._title = self.soup.title.getText()
         return self._title
 
     @property
     def abstract(self):
-        if not self._abstract:
+        if not self._abstract and self.soup.abstract:
             abstract = self.soup.abstract.getText(separator=" ", strip=True)
             self._abstract = abstract
         return self._abstract
@@ -128,6 +128,14 @@ if __name__ == "__main__":
         help="path to the grobid extraction folder which has the TEI files",
     )
 
-    args = parser.parse_args()
+    parser.add_argument(
+        "--k",
+        type=int,
+        default=None,
+        help="path to the grobid extraction folder which has the TEI files",
+    )
 
-    df = get_dataframe(args.path_to_extraction_folder)
+    args = parser.parse_args()
+    k = args.k
+
+    df = get_dataframe(args.path_to_extraction_folder, k)
