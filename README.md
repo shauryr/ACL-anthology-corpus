@@ -55,4 +55,4 @@ We are hoping that this corpus can be helpful for analysis relevant to the ACL c
 
 ## License
 
-ACL anthology corpus is released under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).  By using S2ORC, you are agreeing to its usage terms.
+ACL anthology corpus is released under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).  By using this corpus, you are agreeing to its usage terms.
