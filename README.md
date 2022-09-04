@@ -13,7 +13,7 @@ This repository provides data for `80,013` ACL articles/posters -
 1. 📖 All PDFs in ACL anthology : **size 45G**  [download here](https://drive.google.com/file/d/1OGHyJrkaVpbrdbmxsDotG-tI3LiKyxuC/view?usp=sharing)
 2. 🎓 All bib files in ACL anthology with abstracts : **size 172M** [download here](https://drive.google.com/file/d/1dJ-iE85moBv3iYG2LhRLT6KQyVkmllBg/view?usp=sharing)
 2. 🏷️  Raw grobid extraction results on all the ACL anthology pdfs which includes full text and references : **size 3.6G** [download here](https://drive.google.com/file/d/1xC-K6__W3FCalIDBlDROeN4d4xh0IVry/view?usp=sharing)
-3. 💾  CSV file with metadata and full text of the collection for analysis : [download here](https://drive.google.com/file/d/1tmczx10fRgOXBN6gweN3f8qscz9pXNnN/view?usp=sharing)
+3. 💾  CSV file with metadata and full text of the collection for analysis : **size 503M** [download here](https://drive.google.com/file/d/19rEco5OT4Um-0DNzna27UfZ1wjSG5oKC/view?usp=sharing)
 
 ```python
 >>> import pandas as pd
