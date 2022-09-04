@@ -48,7 +48,12 @@ TODO:
 
 We are hoping that this corpus can be helpful for analysis relevant to the ACL community. 
 
-Please cite/star 🌟 this page if you use this corpus.
+## License
+
+S2ORC is released under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).  By using S2ORC, you are agreeing to its usage terms.
+
+
+**Please cite/star 🌟 this page if you use this corpus**
 
 [<img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black">](https://www.buymeacoffee.com/shauryrG)
 
