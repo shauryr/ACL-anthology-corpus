@@ -12,7 +12,7 @@ The goal is to keep this repo updated and provide a comprehensive repository of 
 This repository provides data for `80,013` ACL articles/posters - 
 1. 📖 All PDFs in ACL anthology : **size 45G**  [download here](https://drive.google.com/file/d/1OGHyJrkaVpbrdbmxsDotG-tI3LiKyxuC/view?usp=sharing)
 2. 🎓 All bib files in ACL anthology with abstracts : **size 172M** [download here](https://drive.google.com/file/d/1dJ-iE85moBv3iYG2LhRLT6KQyVkmllBg/view?usp=sharing)
-2. 🏷️  Raw grobid extraction results on all the ACL anthology pdfs which includes full text and references [download here](https://drive.google.com/file/d/1xC-K6__W3FCalIDBlDROeN4d4xh0IVry/view?usp=sharing)
+2. 🏷️  Raw grobid extraction results on all the ACL anthology pdfs which includes full text and references : **size 3.6G** [download here](https://drive.google.com/file/d/1xC-K6__W3FCalIDBlDROeN4d4xh0IVry/view?usp=sharing)
 3. 💾  CSV file with metadata and full text of the collection for analysis : [download here](https://drive.google.com/file/d/1tmczx10fRgOXBN6gweN3f8qscz9pXNnN/view?usp=sharing)
 
 ```python
@@ -37,24 +37,22 @@ The  provided ACL id is consistent with S2 API as well -
 
 [https://api.semanticscholar.org/graph/v1/paper/ACL:P83-1025](https://api.semanticscholar.org/graph/v1/paper/ACL:P83-1025)
 
-
-
 TODO:
 1. Link the acl corpus to semantic scholar(S2), sources like S2ORC 
 2. Extract figures and captions from the ACL corpus using pdffigures.
 3. Have a release schedule to keep the corpus updated.
 4. ACL citation graph
-5. Enhance metadata with bib file mapping
+5. Enhance metadata with bib file mapping - include authors
+6. Added number of citations for papers
 
 We are hoping that this corpus can be helpful for analysis relevant to the ACL community. 
-
-## License
-
-S2ORC is released under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).  By using S2ORC, you are agreeing to its usage terms.
-
 
 **Please cite/star 🌟 this page if you use this corpus**
 
 [<img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black">](https://www.buymeacoffee.com/shauryrG)
 
-If you are feeling generous buy me a ☕  
+<!-- If you are feeling generous buy me a ☕   -->
+
+## License
+
+ACL anthology corpus is released under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).  By using S2ORC, you are agreeing to its usage terms.
