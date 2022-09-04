@@ -1,5 +1,5 @@
 # ACL Anthology Corpus - Full Text 📚
-This repository provides full-text and metadata to the ACL anthology collection including .pdf files and grobid extractions of the pdfs.
+This repository provides full-text and metadata to the ACL anthology collection (80k articles/posters as of 09/04/22) also including .pdf files and grobid extractions of the pdfs.
 
 ## How is this different from what ACL anthology provides? 
 We are also providing full-text, references and other details extracted by grobid from the PDFs. If you just want abstracts, please visit - [acl anthology](https://aclanthology.org/anthology+abstracts.bib.gz) 
