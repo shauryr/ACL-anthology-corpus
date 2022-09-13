@@ -16,8 +16,6 @@ for text in tqdm(df["full_text"]):
 
 random.shuffle(data)
 with open("train_sentences.txt", "w") as f:
-    # for line in data[:1687922]:
-    # f.write("%s\n" % line)
     f.write("\n".join(data[:1687922]))
 
 
