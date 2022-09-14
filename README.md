@@ -1,4 +1,7 @@
 # ACL Anthology Corpus - Full Text 📚
+
+[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 This repository provides full-text and metadata to the ACL anthology collection (80k articles/posters as of September 2022) also including .pdf files and grobid extractions of the pdfs.
 
 ## How is this different from what ACL anthology provides and what already exists? 
