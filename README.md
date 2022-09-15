@@ -42,6 +42,26 @@ The  provided ACL id is consistent with S2 API as well -
 
 The API can be used to fetch more information for each paper in the corpus.
 
+## Text generation on Huggingface
+
+```python
+>>> from transformers import AutoTokenizer, AutoModelForCausalLM
+>>>
+>>> tokenizer = AutoTokenizer.from_pretrained("shaurya0512/distilgpt2-finetune-acl22")
+
+>>>
+>>> model = AutoModelForCausalLM.from_pretrained("shaurya0512/distilgpt2-finetune-acl22")
+>>>
+>>> input_context = "We introduce a new transformer LLM called"
+>>> input_ids = tokenizer.encode(input_context, return_tensors="pt")  # encode input context
+>>> outputs = model.generate(
+...     input_ids=input_ids, max_length=128, temperature=0.7, repetition_penalty=1.2
+... )  # generate sequences
+>>> print(f"Generated: {tokenizer.decode(outputs[0], skip_special_tokens=True)}")
+Generated: We introduce a new transformer LLM called the Transformer-based model. The architecture is based on two components: (1) an encoder and decoders, which are trained with different amounts of data; (2), where each layer has been initialized by randomly sampling from all layers in both directions to obtain their final representations for training sentences conditioned only on input tokens or unlabeled text respectively as shown below : LSTMs = {h 1, h 2 } • BiLDA(W s ) + bs ∈ R d×d. We use Adam optimizer [11] over word embedding vectors using Gl
+```
+
+
 TODO:
 1. Link the acl corpus to semantic scholar(S2), sources like S2ORC 
 2. Extract figures and captions from the ACL corpus using pdffigures.
