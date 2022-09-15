@@ -65,7 +65,11 @@ Example:
 ```
 
 ```
-Generated: We introduce a new language representation for the task of sentiment classification. We propose an approach to learn representations from   unlabeled data, which is based on supervised learning and can be applied in many applications such as machine translation (MT) or information retrieval   systems where labeled text has been used by humans with limited training time but no supervision available at all. Our method achieves state-oftheart   results using only one dataset per domain compared to other approaches that use multiple datasets simultaneously, including BERTScore(Devlin et al.,   2019; Liu & Lapata, 2020b ) ; RoBERTa+LSTM + L2SRC -  
+Generated: We introduce a new language representation for the task of sentiment classification. We propose an approach to learn representations from   
+unlabeled data, which is based on supervised learning and can be applied in many applications such as machine translation (MT) or information retrieval   
+systems where labeled text has been used by humans with limited training time but no supervision available at all. Our method achieves state-oftheart   
+results using only one dataset per domain compared to other approaches that use multiple datasets simultaneously, including BERTScore(Devlin et al.,   
+2019; Liu & Lapata, 2020b ) ; RoBERTa+LSTM + L2SRC -  
 ``` 
 
 
