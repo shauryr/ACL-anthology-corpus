@@ -42,23 +42,27 @@ The  provided ACL id is consistent with S2 API as well -
 
 The API can be used to fetch more information for each paper in the corpus.
 
+---
 ## Text generation on Huggingface
+
+We fine-tuned the distilgpt2 model from huggingface using the full-text from this corpus. The model is trained for generation task.
+
+Text Generation Demo : https://huggingface.co/shaurya0512/distilgpt2-finetune-acl22
+
+Example:
 
 ```python
 >>> from transformers import AutoTokenizer, AutoModelForCausalLM
->>>
 >>> tokenizer = AutoTokenizer.from_pretrained("shaurya0512/distilgpt2-finetune-acl22")
-
->>>
 >>> model = AutoModelForCausalLM.from_pretrained("shaurya0512/distilgpt2-finetune-acl22")
 >>>
->>> input_context = "We introduce a new transformer LLM called"
+>>> input_context = "We introduce a new language representation"
 >>> input_ids = tokenizer.encode(input_context, return_tensors="pt")  # encode input context
 >>> outputs = model.generate(
 ...     input_ids=input_ids, max_length=128, temperature=0.7, repetition_penalty=1.2
 ... )  # generate sequences
 >>> print(f"Generated: {tokenizer.decode(outputs[0], skip_special_tokens=True)}")
-Generated: We introduce a new transformer LLM called the Transformer-based model. The architecture is based on two components: (1) an encoder and decoders, which are trained with different amounts of data; (2), where each layer has been initialized by randomly sampling from all layers in both directions to obtain their final representations for training sentences conditioned only on input tokens or unlabeled text respectively as shown below : LSTMs = {h 1, h 2 } • BiLDA(W s ) + bs ∈ R d×d. We use Adam optimizer [11] over word embedding vectors using Gl
+Generated: We introduce a new language representation for the task of sentiment classification. We propose an approach to learn representations from unlabeled data, which is based on supervised learning and can be applied in many applications such as machine translation (MT) or information retrieval systems where labeled text has been used by humans with limited training time but no supervision available at all. Our method achieves state-oftheart results using only one dataset per domain compared to other approaches that use multiple datasets simultaneously, including BERTScore(Devlin et al., 2019; Liu & Lapata, 2020b ) ; RoBERTa+LSTM + L2SRC -
 ```
 
 
