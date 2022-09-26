@@ -45,7 +45,7 @@ The API can be used to fetch more information for each paper in the corpus.
 ---
 ## Text generation on Huggingface
 
-We fine-tuned the distilgpt2 model from huggingface using the full-text from this corpus. The model is trained for generation task.
+We fine-tuned the DistilGPT2 model from huggingface using the full-text from this corpus. The model is trained for generation task.
 
 Text Generation Demo : https://huggingface.co/shaurya0512/distilgpt2-finetune-acl22
 
