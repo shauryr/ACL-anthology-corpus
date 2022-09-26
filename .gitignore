@@ -131,7 +131,7 @@ dmypy.json
 private_README.md
 code/parse_grobid_extraction/acl_corpus_full-text.parquet
 code/parse_grobid_extraction/train_sentences.txt
-code/parse_grobid_extraction/train.txt
 .gitignore
 code/parse_grobid_extraction/val.txt
 code/parse_grobid_extraction/val_sentences.txt
+code/parse_grobid_extraction/train.txt
