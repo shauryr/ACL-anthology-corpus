@@ -1,4 +1,7 @@
-# ACL Anthology Corpus - Full Text 📚
+#  📚  ACL Anthology Corpus - Full Text 
+
+[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 This repository provides full-text and metadata to the ACL anthology collection (80k articles/posters as of September 2022) also including .pdf files and grobid extractions of the pdfs.
 
 ## How is this different from what ACL anthology provides and what already exists? 
@@ -38,6 +41,37 @@ The  provided ACL id is consistent with S2 API as well -
 [https://api.semanticscholar.org/graph/v1/paper/ACL:P83-1025](https://api.semanticscholar.org/graph/v1/paper/ACL:P83-1025)
 
 The API can be used to fetch more information for each paper in the corpus.
+
+---
+## Text generation on Huggingface
+
+We fine-tuned the distilgpt2 model from huggingface using the full-text from this corpus. The model is trained for generation task.
+
+Text Generation Demo : https://huggingface.co/shaurya0512/distilgpt2-finetune-acl22
+
+Example:
+
+```python
+>>> from transformers import AutoTokenizer, AutoModelForCausalLM
+>>> tokenizer = AutoTokenizer.from_pretrained("shaurya0512/distilgpt2-finetune-acl22")
+>>> model = AutoModelForCausalLM.from_pretrained("shaurya0512/distilgpt2-finetune-acl22")
+>>>
+>>> input_context = "We introduce a new language representation"
+>>> input_ids = tokenizer.encode(input_context, return_tensors="pt")  # encode input context
+>>> outputs = model.generate(
+...     input_ids=input_ids, max_length=128, temperature=0.7, repetition_penalty=1.2
+... )  # generate sequences
+>>> print(f"Generated: {tokenizer.decode(outputs[0], skip_special_tokens=True)}")
+```
+
+```
+Generated: We introduce a new language representation for the task of sentiment classification. We propose an approach to learn representations from   
+unlabeled data, which is based on supervised learning and can be applied in many applications such as machine translation (MT) or information retrieval   
+systems where labeled text has been used by humans with limited training time but no supervision available at all. Our method achieves state-oftheart   
+results using only one dataset per domain compared to other approaches that use multiple datasets simultaneously, including BERTScore(Devlin et al.,   
+2019; Liu & Lapata, 2020b ) ; RoBERTa+LSTM + L2SRC -  
+``` 
+
 
 TODO:
 1. Link the acl corpus to semantic scholar(S2), sources like S2ORC 
