@@ -107,7 +107,7 @@ results using only one dataset per domain compared to other approaches that use 
 4. ACL citation graph
 5. ~~Enhance metadata with bib file mapping - include authors~~
 6. ~~Add citation counts for papers~~
-7. Use ForeCite to extract impactful keywords from the corpus
+7. Use [ForeCite](https://github.com/allenai/ForeCite) to extract impactful keywords from the corpus
 
 We are hoping that this corpus can be helpful for analysis relevant to the ACL community. 
 
