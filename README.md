@@ -108,6 +108,7 @@ results using only one dataset per domain compared to other approaches that use 
 5. ~~Enhance metadata with bib file mapping - include authors~~
 6. ~~Add citation counts for papers~~
 7. Use [ForeCite](https://github.com/allenai/ForeCite) to extract impactful keywords from the corpus
+8. Link datasets using [paperswithcode](https://github.com/paperswithcode/paperswithcode-data)? - don't know how useful this is
 
 We are hoping that this corpus can be helpful for analysis relevant to the ACL community. 
 
