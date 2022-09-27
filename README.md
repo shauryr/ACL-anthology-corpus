@@ -19,29 +19,29 @@ This repository provides data for `80,013` ACL articles/posters -
 3. 💾  Dataframe with extracted metadata (table below with details) and full text of the collection for analysis : **size 489M** [download here](https://drive.google.com/file/d/1CFCzNGlTls0H-Zcaem4Hg_ETj4ebhcDO/view?usp=sharing)
 
 
-|   **Column name**  |        **Description**        |
-|:------------------:|:-----------------------------:|
-|      `acl_id `     |         unique ACL id         |
-|     `abstract `    |  abstract extracted by GROBID |
+|  **Column name**   |        **Description**        |
+| :----------------: | :---------------------------: |
+|     `acl_id `      |         unique ACL id         |
+|    `abstract `     | abstract extracted by GROBID  |
 |    `full_text `    | full text extracted by GROBID |
 | `corpus_paper_id ` |      Semantic Scholar ID      |
-|     `pdf_hash `    |      sha1 hash of the pdf     |
-|    `numcitedby `   |  number of citations from S2  |
+|    `pdf_hash `     |     sha1 hash of the pdf      |
+|   `numcitedby `    |  number of citations from S2  |
 |       `url `       |      link of publication      |
 |    `publisher `    |               -               |
 |     `address `     |     Address of conference     |
 |       `year`       |               -               |
 |      `month `      |               -               |
 |    `booktitle `    |               -               |
-|      `author `     |        list of authors        |
-|      `title `      |         title of paper        |
+|     `author `      |        list of authors        |
+|      `title `      |        title of paper         |
 |      `pages `      |               -               |
 |       `doi `       |               -               |
-|      `number `     |               -               |
-|      `volume `     |               -               |
+|     `number `      |               -               |
+|     `volume `      |               -               |
 |     `journal `     |               -               |
-|      `editor `     |               -               |
-|       `isbn `      |               -               |
+|     `editor `      |               -               |
+|      `isbn `       |               -               |
 
 ```python
 >>> import pandas as pd
@@ -101,12 +101,13 @@ results using only one dataset per domain compared to other approaches that use 
 
 
 TODO:
-1. Link the acl corpus to semantic scholar(S2), sources like S2ORC 
+1. ~~Link the acl corpus to semantic scholar(S2), sources like S2ORC~~ 
 2. Extract figures and captions from the ACL corpus using pdffigures.
 3. Have a release schedule to keep the corpus updated.
 4. ACL citation graph
-5. Enhance metadata with bib file mapping - include authors
-6. Add citation counts for papers
+5. ~~Enhance metadata with bib file mapping - include authors~~
+6. ~~Add citation counts for papers~~
+7. Use ForeCite to extract impactful keywords from the corpus
 
 We are hoping that this corpus can be helpful for analysis relevant to the ACL community. 
 
