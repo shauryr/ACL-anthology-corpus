@@ -102,7 +102,7 @@ results using only one dataset per domain compared to other approaches that use 
 
 ### TODO:
 1. ~~Link the acl corpus to semantic scholar(S2), sources like S2ORC~~ 
-2. Extract figures and captions from the ACL corpus using pdffigures.
+2. Extract figures and captions from the ACL corpus using pdffigures - [scientific-figure-captioning](https://github.com/billchen0/scientific-figure-captioning)
 3. Have a release schedule to keep the corpus updated.
 4. ACL citation graph
 5. ~~Enhance metadata with bib file mapping - include authors~~
