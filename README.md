@@ -16,24 +16,51 @@ This repository provides data for `80,013` ACL articles/posters -
 1. 📖 All PDFs in ACL anthology : **size 45G**  [download here](https://drive.google.com/file/d/1OGHyJrkaVpbrdbmxsDotG-tI3LiKyxuC/view?usp=sharing)
 2. 🎓 All bib files in ACL anthology with abstracts : **size 172M** [download here](https://drive.google.com/file/d/1dJ-iE85moBv3iYG2LhRLT6KQyVkmllBg/view?usp=sharing)
 2. 🏷️  Raw grobid extraction results on all the ACL anthology pdfs which includes full text and references : **size 3.6G** [download here](https://drive.google.com/file/d/1xC-K6__W3FCalIDBlDROeN4d4xh0IVry/view?usp=sharing)
-3. 💾  Dataframe with metadata and full text of the collection for analysis : **size 503M** [download here](https://drive.google.com/file/d/19rEco5OT4Um-0DNzna27UfZ1wjSG5oKC/view?usp=sharing)
+3. 💾  Dataframe with extracted metadata (table below with details) and full text of the collection for analysis : **size 489M** [download here](https://drive.google.com/file/d/1CFCzNGlTls0H-Zcaem4Hg_ETj4ebhcDO/view?usp=sharing)
+
+
+|   **Column name**  |        **Description**        |
+|:------------------:|:-----------------------------:|
+|      `acl_id `     |         unique ACL id         |
+|     `abstract `    |  abstract extracted by GROBID |
+|    `full_text `    | full text extracted by GROBID |
+| `corpus_paper_id ` |      Semantic Scholar ID      |
+|     `pdf_hash `    |      sha1 hash of the pdf     |
+|    `numcitedby `   |  number of citations from S2  |
+|       `url `       |      link of publication      |
+|    `publisher `    |               -               |
+|     `address `     |     Address of conference     |
+|       `year`       |               -               |
+|      `month `      |               -               |
+|    `booktitle `    |               -               |
+|      `author `     |        list of authors        |
+|      `title `      |         title of paper        |
+|      `pages `      |               -               |
+|       `doi `       |               -               |
+|      `number `     |               -               |
+|      `volume `     |               -               |
+|     `journal `     |               -               |
+|      `editor `     |               -               |
+|       `isbn `      |               -               |
 
 ```python
 >>> import pandas as pd
->>> pd.read_parquet('acl_corpus_full-text.parquet')
+>>> df = pd.read_parquet('acl-publication-info.74k.parquet')
+>>> df
+         acl_id                                           abstract                                          full_text  corpus_paper_id                                  pdf_hash  ...  number volume journal editor  isbn
+0      O02-2002  There is a need to measure word similarity whe...  There is a need to measure word similarity whe...         18022704  0b09178ac8d17a92f16140365363d8df88c757d0  ...    None   None    None   None  None
+1      L02-1310                                                                                                                8220988  8d5e31610bc82c2abc86bc20ceba684c97e66024  ...    None   None    None   None  None
+2      R13-1042  Thread disentanglement is the task of separati...  Thread disentanglement is the task of separati...         16703040  3eb736b17a5acb583b9a9bd99837427753632cdb  ...    None   None    None   None  None
+3      W05-0819  In this paper, we describe a word alignment al...  In this paper, we describe a word alignment al...          1215281  b20450f67116e59d1348fc472cfc09f96e348f55  ...    None   None    None   None  None
+4      L02-1309                                                                                                               18078432  011e943b64a78dadc3440674419821ee080f0de3  ...    None   None    None   None  None
+...         ...                                                ...                                                ...              ...                                       ...  ...     ...    ...     ...    ...   ...
+73280  P99-1002  This paper describes recent progress and the a...  This paper describes recent progress and the a...           715160  ab17a01f142124744c6ae425f8a23011366ec3ee  ...    None   None    None   None  None
+73281  P00-1009  We present an LFG-DOP parser which uses fragme...  We present an LFG-DOP parser which uses fragme...          1356246  ad005b3fd0c867667118482227e31d9378229751  ...    None   None    None   None  None
+73282  P99-1056  The processes through which readers evoke ment...  The processes through which readers evoke ment...          7277828  924cf7a4836ebfc20ee094c30e61b949be049fb6  ...    None   None    None   None  None
+73283  P99-1051  This paper examines the extent to which verb d...  This paper examines the extent to which verb d...          1829043  6b1f6f28ee36de69e8afac39461ee1158cd4d49a  ...    None   None    None   None  None
+73284  P00-1013  Spoken dialogue managers have benefited from u...  Spoken dialogue managers have benefited from u...         10903652  483c818c09e39d9da47103fbf2da8aaa7acacf01  ...    None   None    None   None  None
 
-            acl_id           title        abstract       full_text
-0         P83-1025  Discourse P...  This paper ...  This paper ...
-1         P93-1015  Parsing Fre...  There is a ...  There is a ...
-2         P82-1017  REFLECTIONS...                  Our society...
-3         C86-1129  A Lexical F...  This paper ...  This paper ...
-4         C80-1093  AUTHOR INDE...                                
-..             ...             ...             ...             ...
-95  2022.hcinlp...                                  Introductio...
-96   2021.tacl-1.9  On the Rela...  We use larg...  We use larg...
-97  2022.nlp4co...  Understandi...  Exemplar-ba...  Exemplar-ba...
-98  2022.nlp4co...  Stylistic R...  Personality...  Personality...
-99  2022.nlp4co...  Toward Know...  Conversatio...  Conversatio...
+[73285 rows x 21 columns]
 ```
 
 The  provided ACL id is consistent with S2 API as well - 
