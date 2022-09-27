@@ -100,7 +100,7 @@ results using only one dataset per domain compared to other approaches that use 
 ``` 
 
 
-TODO:
+### TODO:
 1. ~~Link the acl corpus to semantic scholar(S2), sources like S2ORC~~ 
 2. Extract figures and captions from the ACL corpus using pdffigures.
 3. Have a release schedule to keep the corpus updated.
