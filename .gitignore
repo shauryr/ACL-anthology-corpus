@@ -132,6 +132,17 @@ private_README.md
 code/parse_grobid_extraction/acl_corpus_full-text.parquet
 code/parse_grobid_extraction/train_sentences.txt
 .gitignore
+acl_corpus_full-text.parquet
 code/parse_grobid_extraction/val.txt
 code/parse_grobid_extraction/val_sentences.txt
 code/parse_grobid_extraction/train.txt
+code/fetch_data_s2/pys2.py
+code/fetch_data_s2/foo-1.073944
+code/fetch_data_s2/foo-1.080012
+code/fetch_data_s2/df_papers_acl_citations.parquet
+code/fetch_data_s2/acl-publication-info.74k.parquet
+code/notebooks/acl-publication-info.74k.parquet
+code/notebooks/pys2.py
+code/notebooks/foo-1.080012
+code/notebooks/foo-1.073944
+code/notebooks/df_papers_acl_citations.parquet
