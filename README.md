@@ -118,6 +118,9 @@ We are hoping that this corpus can be helpful for analysis relevant to the ACL c
 
 <!-- If you are feeling generous buy me a ☕   -->
 
+## Acknowledgements
+We thank Semantic Scholar for providing access to the citation related data in this corpus.
+
 ## License
 
 ACL anthology corpus is released under the [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).  By using this corpus, you are agreeing to its usage terms.
