@@ -13,7 +13,7 @@ This repository provides full-text and metadata to the ACL anthology collection 
 
 The goal is to keep this corpus updated and provide a comprehensive repository of the full ACL collection.
 
-This repository provides data for `80,013` ACL articles/posters -
+This repository provides data for `73,285` ACL articles/posters -
 
 1. 📖 All PDFs in ACL anthology : **size 45G**  [download here](https://drive.google.com/file/d/1OGHyJrkaVpbrdbmxsDotG-tI3LiKyxuC/view?usp=sharing)
 2. 🎓 All bib files in ACL anthology with abstracts : **size 172M** [download here](https://drive.google.com/file/d/1dJ-iE85moBv3iYG2LhRLT6KQyVkmllBg/view?usp=sharing)
@@ -71,6 +71,21 @@ The  provided ACL id is consistent with S2 API as well -
 The API can be used to fetch more information for each paper in the corpus.
 
 ---
+
+## Dataset Statistics
+
+<!-- Run code/statistics/main.py to get information for this table -->
+
+- **Total rows**: 73285
+- **Total unique & valid rows**: 63422
+- **Language distribution**: en 62308 (96.5%), fr 2037 (3.2%), pt 54 (0.1%), cy 25, ca 17, fi 14, no 11, de 10, ko 10, ... (long tail of less-represented languages)
+- **Average sents (words) per abstract**: 5.7 (140.5)
+- **Average sents (words) per paper text**: 159.0 (4264.7)
+- **Average words per title**: 10.4
+- **Total sents/words**: 11mil (284mil)
+- **Average number of authors**: 3.2
+- **Average number of citations**: 35.4
+- **Average number of pages per paper**: 9.2
 
 ## Text generation on Huggingface
 
