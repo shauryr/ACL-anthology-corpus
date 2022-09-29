@@ -1,47 +1,48 @@
-#  📚  ACL Anthology Corpus - Full Text 
+# 📚  ACL Anthology Corpus - Full Text
 
 [![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 This repository provides full-text and metadata to the ACL anthology collection (80k articles/posters as of September 2022) also including .pdf files and grobid extractions of the pdfs.
 
-## How is this different from what ACL anthology provides and what already exists? 
-- We provide pdfs, full-text, references and other details extracted by grobid from the PDFs while [ACL Anthology](https://aclanthology.org/anthology+abstracts.bib.gz) only provides abstracts. 
+## How is this different from what ACL anthology provides and what already exists?
+
+- We provide pdfs, full-text, references and other details extracted by grobid from the PDFs while [ACL Anthology](https://aclanthology.org/anthology+abstracts.bib.gz) only provides abstracts.
 - There exists a similar corpus call [ACL Anthology Network](https://clair.eecs.umich.edu/aan/about.php) but is now showing its age with just 23k papers from Dec 2016.
 
 ----
 
 The goal is to keep this corpus updated and provide a comprehensive repository of the full ACL collection.
 
-This repository provides data for `80,013` ACL articles/posters - 
+This repository provides data for `80,013` ACL articles/posters -
+
 1. 📖 All PDFs in ACL anthology : **size 45G**  [download here](https://drive.google.com/file/d/1OGHyJrkaVpbrdbmxsDotG-tI3LiKyxuC/view?usp=sharing)
 2. 🎓 All bib files in ACL anthology with abstracts : **size 172M** [download here](https://drive.google.com/file/d/1dJ-iE85moBv3iYG2LhRLT6KQyVkmllBg/view?usp=sharing)
-2. 🏷️  Raw grobid extraction results on all the ACL anthology pdfs which includes full text and references : **size 3.6G** [download here](https://drive.google.com/file/d/1xC-K6__W3FCalIDBlDROeN4d4xh0IVry/view?usp=sharing)
-3. 💾  Dataframe with extracted metadata (table below with details) and full text of the collection for analysis : **size 489M** [download here](https://drive.google.com/file/d/1CFCzNGlTls0H-Zcaem4Hg_ETj4ebhcDO/view?usp=sharing)
-
+3. 🏷️  Raw grobid extraction results on all the ACL anthology pdfs which includes full text and references : **size 3.6G** [download here](https://drive.google.com/file/d/1xC-K6__W3FCalIDBlDROeN4d4xh0IVry/view?usp=sharing)
+4. 💾  Dataframe with extracted metadata (table below with details) and full text of the collection for analysis : **size 489M** [download here](https://drive.google.com/file/d/1CFCzNGlTls0H-Zcaem4Hg_ETj4ebhcDO/view?usp=sharing)
 
 |  **Column name**   |        **Description**        |
 | :----------------: | :---------------------------: |
-|     `acl_id `      |         unique ACL id         |
-|    `abstract `     | abstract extracted by GROBID  |
-|    `full_text `    | full text extracted by GROBID |
-| `corpus_paper_id ` |      Semantic Scholar ID      |
-|    `pdf_hash `     |     sha1 hash of the pdf      |
-|   `numcitedby `    |  number of citations from S2  |
-|       `url `       |      link of publication      |
-|    `publisher `    |               -               |
-|     `address `     |     Address of conference     |
+|     `acl_id`      |         unique ACL id         |
+|    `abstract`     | abstract extracted by GROBID  |
+|    `full_text`    | full text extracted by GROBID |
+| `corpus_paper_id` |      Semantic Scholar ID      |
+|    `pdf_hash`     |     sha1 hash of the pdf      |
+|   `numcitedby`    |  number of citations from S2  |
+|       `url`       |      link of publication      |
+|    `publisher`    |               -               |
+|     `address`     |     Address of conference     |
 |       `year`       |               -               |
-|      `month `      |               -               |
-|    `booktitle `    |               -               |
-|     `author `      |        list of authors        |
-|      `title `      |        title of paper         |
-|      `pages `      |               -               |
-|       `doi `       |               -               |
-|     `number `      |               -               |
-|     `volume `      |               -               |
-|     `journal `     |               -               |
-|     `editor `      |               -               |
-|      `isbn `       |               -               |
+|      `month`      |               -               |
+|    `booktitle`    |               -               |
+|     `author`      |        list of authors        |
+|      `title`      |        title of paper         |
+|      `pages`      |               -               |
+|       `doi`       |               -               |
+|     `number`      |               -               |
+|     `volume`      |               -               |
+|     `journal`     |               -               |
+|     `editor`      |               -               |
+|      `isbn`       |               -               |
 
 ```python
 >>> import pandas as pd
@@ -63,18 +64,19 @@ This repository provides data for `80,013` ACL articles/posters -
 [73285 rows x 21 columns]
 ```
 
-The  provided ACL id is consistent with S2 API as well - 
+The  provided ACL id is consistent with S2 API as well -
 
 [https://api.semanticscholar.org/graph/v1/paper/ACL:P83-1025](https://api.semanticscholar.org/graph/v1/paper/ACL:P83-1025)
 
 The API can be used to fetch more information for each paper in the corpus.
 
 ---
+
 ## Text generation on Huggingface
 
 We fine-tuned the distilgpt2 model from huggingface using the full-text from this corpus. The model is trained for generation task.
 
-Text Generation Demo : https://huggingface.co/shaurya0512/distilgpt2-finetune-acl22
+Text Generation Demo : <https://huggingface.co/shaurya0512/distilgpt2-finetune-acl22>
 
 Example:
 
@@ -91,17 +93,17 @@ Example:
 >>> print(f"Generated: {tokenizer.decode(outputs[0], skip_special_tokens=True)}")
 ```
 
-```
+```text
 Generated: We introduce a new language representation for the task of sentiment classification. We propose an approach to learn representations from   
 unlabeled data, which is based on supervised learning and can be applied in many applications such as machine translation (MT) or information retrieval   
 systems where labeled text has been used by humans with limited training time but no supervision available at all. Our method achieves state-oftheart   
 results using only one dataset per domain compared to other approaches that use multiple datasets simultaneously, including BERTScore(Devlin et al.,   
 2019; Liu & Lapata, 2020b ) ; RoBERTa+LSTM + L2SRC -  
-``` 
+```
 
+### TODO
 
-### TODO:
-1. ~~Link the acl corpus to semantic scholar(S2), sources like S2ORC~~ 
+1. ~~Link the acl corpus to semantic scholar(S2), sources like S2ORC~~
 2. Extract figures and captions from the ACL corpus using pdffigures - [scientific-figure-captioning](https://github.com/billchen0/scientific-figure-captioning)
 3. Have a release schedule to keep the corpus updated.
 4. ACL citation graph
@@ -111,8 +113,7 @@ results using only one dataset per domain compared to other approaches that use 
 8. Link datasets using [paperswithcode](https://github.com/paperswithcode/paperswithcode-data)? - don't know how useful this is
 9. Have some stats about the data - [linguistic-diversity](http://stats.aclrollingreview.org/submissions/linguistic-diversity/); [geo-diversity](http://stats.aclrollingreview.org/submissions/geo-diversity/); if possible [explorer](http://stats.aclrollingreview.org/submissions/explorer/)
 
-We are hoping that this corpus can be helpful for analysis relevant to the ACL community. 
-
+We are hoping that this corpus can be helpful for analysis relevant to the ACL community.
 
 **Please cite/star 🌟 this page if you use this corpus**
 
@@ -121,6 +122,7 @@ We are hoping that this corpus can be helpful for analysis relevant to the ACL c
 <!-- If you are feeling generous buy me a ☕   -->
 
 ## Acknowledgements
+
 We thank Semantic Scholar for providing access to the citation related data in this corpus.
 
 ## License
