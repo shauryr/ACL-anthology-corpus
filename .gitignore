@@ -153,3 +153,6 @@ allen_ai_shaurya/requirements.txt
 allen_ai_shaurya/README.md
 allen_ai_shaurya/results.json
 allen_ai_shaurya/run.sh
+
+# added by zouharvi
+data/*.parquet
