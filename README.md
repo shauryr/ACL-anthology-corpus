@@ -117,6 +117,18 @@ We are hoping that this corpus can be helpful for analysis relevant to the ACL c
 
 **Please cite/star 🌟 this page if you use this corpus**
 
+## Citing the ACL Anthology Corpus
+
+If you use this corpus in your research please use the following BibTeX entry:
+
+    @Misc{acl_anthology_corpus,
+        author =       {Shaurya Rohatgi},
+        title =        {ACL Anthology Corpus with Full Text},
+        howpublished = {Github},
+        year =         {2022},
+        url =          {https://github.com/shauryr/ACL-anthology-corpus}
+    }
+
 [<img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black">](https://www.buymeacoffee.com/shauryrG)
 
 <!-- If you are feeling generous buy me a ☕   -->
