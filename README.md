@@ -20,8 +20,8 @@ This repository provides data for `80,013` ACL articles/posters -
 3. 🏷️  Raw grobid extraction results on all the ACL anthology pdfs which includes full text and references : **size 3.6G** [download here](https://drive.google.com/file/d/1xC-K6__W3FCalIDBlDROeN4d4xh0IVry/view?usp=sharing)
 4. 💾  Dataframe with extracted metadata (table below with details) and full text of the collection for analysis : **size 489M** [download here](https://drive.google.com/file/d/1CFCzNGlTls0H-Zcaem4Hg_ETj4ebhcDO/view?usp=sharing)
 
-|  **Column name**   |        **Description**        |
-| :----------------: | :---------------------------: |
+|  **Column name**  |        **Description**        |
+| :---------------: | :---------------------------: |
 |     `acl_id`      |         unique ACL id         |
 |    `abstract`     | abstract extracted by GROBID  |
 |    `full_text`    | full text extracted by GROBID |
@@ -31,7 +31,7 @@ This repository provides data for `80,013` ACL articles/posters -
 |       `url`       |      link of publication      |
 |    `publisher`    |               -               |
 |     `address`     |     Address of conference     |
-|       `year`       |               -               |
+|      `year`       |               -               |
 |      `month`      |               -               |
 |    `booktitle`    |               -               |
 |     `author`      |        list of authors        |
@@ -112,7 +112,7 @@ results using only one dataset per domain compared to other approaches that use 
 7. Use [ForeCite](https://github.com/allenai/ForeCite) to extract impactful keywords from the corpus
 8. Link datasets using [paperswithcode](https://github.com/paperswithcode/paperswithcode-data)? - don't know how useful this is
 9. Have some stats about the data - [linguistic-diversity](http://stats.aclrollingreview.org/submissions/linguistic-diversity/); [geo-diversity](http://stats.aclrollingreview.org/submissions/geo-diversity/); if possible [explorer](http://stats.aclrollingreview.org/submissions/explorer/)
-
+10. zero-shot classification 
 We are hoping that this corpus can be helpful for analysis relevant to the ACL community.
 
 **Please cite/star 🌟 this page if you use this corpus**
@@ -121,6 +121,7 @@ We are hoping that this corpus can be helpful for analysis relevant to the ACL c
 
 If you use this corpus in your research please use the following BibTeX entry:
 
+```json
     @Misc{acl_anthology_corpus,
         author =       {Shaurya Rohatgi},
         title =        {ACL Anthology Corpus with Full Text},
@@ -128,6 +129,7 @@ If you use this corpus in your research please use the following BibTeX entry:
         year =         {2022},
         url =          {https://github.com/shauryr/ACL-anthology-corpus}
     }
+```
 
 [<img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black">](https://www.buymeacoffee.com/shauryrG)
 
