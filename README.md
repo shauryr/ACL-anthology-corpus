@@ -9,6 +9,10 @@ This repository provides full-text and metadata to the ACL anthology collection 
 - We provide pdfs, full-text, references and other details extracted by grobid from the PDFs while [ACL Anthology](https://aclanthology.org/anthology+abstracts.bib.gz) only provides abstracts.
 - There exists a similar corpus call [ACL Anthology Network](https://clair.eecs.umich.edu/aan/about.php) but is now showing its age with just 23k papers from Dec 2016.
 
+## UPDATE
+
+The data is now hosted on huggingface! Please download it from there. It is the most up to date. https://huggingface.co/datasets/ACL-OCL/acl-anthology-corpus
+
 ----
 
 The goal is to keep this corpus updated and provide a comprehensive repository of the full ACL collection.
