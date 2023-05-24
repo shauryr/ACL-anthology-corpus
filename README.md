@@ -1,4 +1,4 @@
-# 📚  ACL Anthology Corpus - Full Text
+# 📚 The ACL OCL Corpus: Advancing Open Science in Computational Linguistics
 
 [![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
